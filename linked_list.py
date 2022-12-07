@@ -131,24 +131,6 @@ class linkedList:
 
         return current_node
 
-        # while current_node_index < list_size:
-        #     if current_node.value is key:
-        #         if current_node is self.head:
-        #             self.head = current_node.next_node
-        #             current_node.next_node = None
-        #             print("head node removed matching with data:", key)
-
-        #         else:
-        #             prev_node.next_node = current_node.next_node
-        #             current_node.next_node = None
-        #             print("first node removed matching with data:", key)
-
-        #         return None
-            
-            # prev_node = current_node
-            # current_node = current_node.next_node
-            # current_node_index += 1
-        
     def __repr__(self):
         """
         String representation of the list
