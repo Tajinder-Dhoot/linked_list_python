@@ -19,7 +19,7 @@ class Node:
         return "<next node value of a node: %s>" % self.next_node
 
 
-class linkedList:
+class LinkedList:
     """
     Singly Linked List"""
 
@@ -78,7 +78,7 @@ class linkedList:
 
         list_size = self.size()
 
-        if index < list_size:
+        if index <= list_size:
             if index == 0:
                 self.add(data)
             else:
