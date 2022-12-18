@@ -6,6 +6,8 @@ def merge_sort(list):
     Divide : Find the midpoint of the list and divide into sublists
     Conquer: recursively sort the sublists created in the previous step
     Combine: Merge the sorted sublists created in previous steps
+
+    Overall runtime of O(kn log(n))
     """
 
     if len(list) <= 1:
@@ -28,7 +30,8 @@ def split(list):
     Divide the unsorted list at themidpoint into sublists
     Returns two sublists - left and right
 
-    Takes overall O(log n) runtime
+    Takes overall O(k log n) runtime
+    Python ocumentataion says that slicing has runtime of O(k) where k is the slice size
     """
 
     mid = len(list)//2
@@ -39,7 +42,8 @@ def split(list):
 
 def merge(left, right):
     """
-    Merges two lists (arrays), sorting them in the process
+    Merges two lists (arrays), sorting them in the process 
+    Overall runtime of O(n)
     """
 
     l= []
